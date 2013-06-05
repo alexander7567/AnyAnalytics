@@ -7,7 +7,7 @@ function anyanalytics_config() {
     $configarray = array(
     "name" => "Any Analytics",
     "description" => "Allows you to install any analytics software on all cient area pages. I recommend PIWIK.",
-    "version" => "1.0",
+    "version" => "1.1",
     "author" => "Alexander Riggs <alex@alexriggs.com>",
     "language" => "english",
     "fields" => array(

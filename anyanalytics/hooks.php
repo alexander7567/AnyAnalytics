@@ -9,7 +9,7 @@ function anyanalytics_ClientAreaFooterOutput($vars) {
 	if(mysql_num_rows($sql) > 0)
 	{
 		$data = mysql_fetch_assoc($sql);
-		$value = $data["value"];
+		$value = html_entity_decode($data["value"]);
 	} else {
 		$value = '';
 	}
@@ -26,7 +26,7 @@ function anyanalytics_AdminAreaFooterOutput($vars) {
 	if(mysql_num_rows($sql) > 0)
 	{
 		$data = mysql_fetch_assoc($sql);
-		$value = $data["value"];
+		$value = html_entity_decode($data["value"]);
 	} else {
 		$value = '';
 	}
